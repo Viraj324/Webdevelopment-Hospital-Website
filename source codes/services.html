@@ -1,44 +1,260 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<title>Layout</title>
-	<style type="text/css">
-	</style>
+  <title>navigation bar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="a.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+   <style type="text/css">
+ .navbar {
+  margin-top: 10px;
+  background-color: #fff !important;
+  box-shadow: 0px 0px 10px 1px rgb(0, 153, 255, 0.2);
+  padding:30px;
+}
+
+.navbar-brand{
+  font-family: poppins;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #001f33 !important;
+  font-weight: 700;
+  margin-left: 50px;
+}
+
+@media (max-width: 450px){
+  .navbar-brand{
+  font-size: 20px;
+  margin-left: 5px;
+}
+}
+.collapse ul{
+   margin-left: auto !important;
+   margin-right: 50px;
+}
+
+.collapse ul li a{
+  color: #001f33;
+  margin:0px 8px;
+  font-weight: 500;
+}
+
+.collapse ul li a:hover{
+  color: #3399ff !important;
+  border-bottom: 2px solid #3399ff;
+}
+.collapse .button{
+  background-color: black;
+  border-radius: 30px;
+  color: #fff !important;
+  padding:9px 20px !important;
+} 
+
+.topbar{
+  display: flex;
+  padding: 10px 0;
+  
+}
+
+.topbar .sym{
+  width:50%;
+  height: auto;
+  margin-right: 90px;
+  text-align: right;
+  color: #006699;
+  cursor: pointer;
+   
+}
+.topbar .num{
+  width:50%;
+  height: auto;
+  text-align: left;
+  margin-left: 50px;
+  color: #006699;
+  cursor: pointer;
+
+}
+
+.topbar .sym .fa, .topbar .num .fa{
+  margin:0 8px;
+  font-size: 20px;
+}
+.topbar .sym .fa:hover, .topbar .num .fa:hover{
+    color: #3399ff;
+}
+.topbar .num span{
+  color: black;
+  }
+
+ 
+
+
+
+.footer-dark {
+  padding:40px 0;
+  color:#f0f9ff;
+  background-color:#282d32;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-dark ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity:0.8;
+}
+
+
+.footer-dark .item.text {
+  margin-bottom:30px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+.row{
+  height: 114px;
+}
+ </style>
 </head>
+
 <body>
-		<div class="container-fluid">
-		<div class="row">
-		<div class="col-sm-1">
-		<div class="logo">
-			<img src="images/logo.jpg">
-		</div>
-		</div>
-		<div class="col-sm-11">
-		<div class="header">
-			<font size="20px"><p>Bhave Hospital , Pune &nbsp;&nbsp;</p></font>
-		    </div>
-		</div>
-		</div>
 
-		<div class="sidenav">
-		<br><br><br>
- 		<a class="active" href="#">Home</a>
-		<br><br><br>
- 		<a href="#">Services & Specialties</a>
- 		<br><br><br>
-  		<a href="#">Appointments</a>
- 		<br><br><br>
-  		<a href="#">Contact us</a>
-		</div>
+<div class="topbar">
+  <div class="num">
+    <i class="fa fa-cloud"></i><span>bhavehospital@gmail.com</span>
+    &nbsp;&nbsp;&nbsp;
+        <i class="fa fa-mobile"></i><span>+91 9045327865</span>
+  </div>
+  <div class="sym">
+    
+<i class="fa fa-twitter"></i>
+<i class="fa fa-facebook"></i>
+<i class="fa fa-instagram"></i>
+<i class="fa fa-linkedin"></i>
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top">
+  <a class="navbar-brand" href="#">Bhave&nbsp; Multispeciality &nbsp;Hospital</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
 
-		<div class="footer">
-			 <p>Footer</p>
-		</div>
-		</div>
+    <ul class="nav navbar-nav navbar-right">
+      
+       <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services and Specialities</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Doctors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link button" href="#">Make an Appoinment</a>
+      </li>   
+    </ul>
+  </div>  
+</nav>
+<br>
+
+<div class="container">
+  <h3>Collapsible Navbar</h3>
+  <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).</p>
+  <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+  <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p>
+</div>
+
+<div class="container">
+  <h3>Collapsible Navbar</h3>
+  <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).</p>
+  <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+  <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p>
+</div>
+<div class="container">
+  <h3>Collapsible Navbar</h3>
+  <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).</p>
+  <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+  <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p>
+</div>
+<div class="container">
+  <h3>Collapsible Navbar</h3>
+  <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).</p>
+  <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+  <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p>
+</div><br>
+
+<div class="footer-dark">
+   <footer>
+   <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-3 item">
+         <h3>For Appointments</h3>
+         <p>
+           +91 7645348760
+         </p>
+         
+         <h3>For Ambulance</h3>
+         <p>
+           +91 7645348760
+         </p>
+        </div>
+        <div class="col-sm-6 col-md-3 item">
+          <h3>About</h3>
+          <p>Bhave Hospital, in the past 10 years has set new bench marks for standards in the health care industry.</p>
+        </div>
+          <div class="col-md-6 item text">
+          <h3>Address</h3>
+          <p>Bhave Multispeciality Hospital, Krishna Chowk, <br>Opposite to Sambhaji Bank, New Sangvi,<br>Pune - 411061.</p>
+          </div>
+        </div>
+          <p class="copyright">Bhave Hospital © 2021</p>
+        </div>
+   </footer>
+  </div>
+
 </body>
 </html>
