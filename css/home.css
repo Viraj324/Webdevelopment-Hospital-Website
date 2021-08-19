@@ -4,10 +4,10 @@
 }
 
 .navbar-brand{
-  margin-top: 70px;
- font-family: poppins;
+margin-top: 70px;
  text-transform: uppercase;
  font-size: 60px;
+ font-family: poppins;
  color: #001f33 !important;
  font-weight: 500;
  height: 85%;
@@ -106,6 +106,54 @@
 .carousel-caption{
   color: #002a46;
   background-color: #ffffff78;
+}
+
+.info-box-wrapper{
+  width:90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.new-services-p{
+  text-align: center;
+  font-size: 50px;
+  font-family: poppins;
+  color: #001f33 !important;
+  text-transform: capitalize;
+  margin-top: 60px;
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
+}
+
+.info{
+  text-align: center;
+}
+
+.info h4{
+   font-size: 35px;
+   margin-bottom: 10px;
+   font-family: poppins;
+   color: #001f33 !important;
+}
+
+.info p{
+   margin-top: 20px;
+   color: #1a1a1a;
+   font-weight: bold;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.info img{
+  height: 200px;
+  background:#001f33 ;
+}
+
+.info:hover{
+  opacity: 0.5;
+
 }
 
  .footer-dark {
