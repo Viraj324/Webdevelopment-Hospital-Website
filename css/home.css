@@ -63,10 +63,8 @@ margin-top: 70px;
 } 
 
 .topbar{
- 
   display: flex;
   padding: 10px 0;
- 
 }
 
 .topbar .sym{
@@ -76,8 +74,8 @@ margin-top: 70px;
  text-align: right;
  color: #006699;
  cursor: pointer;
-  
 }
+
 .topbar .num{
  width:50%;
  height: auto;
