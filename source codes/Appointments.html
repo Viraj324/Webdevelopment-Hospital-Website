@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>navigation bar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="E:\Git Repository\webDevelopement-Hospital-Website\css\servies.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+   <style type="text/css">
+ .navbar {
+  margin-top: 10px;
+  background-color: #fff !important;
+  box-shadow: 0px 0px 10px 1px rgb(0, 153, 255, 0.2);
+  padding:30px;
+}
+
+.navbar-brand{
+  font-family: poppins;
+  text-transform: uppercase;
+  font-size: 27px;
+  color: #001f33 !important;
+  font-weight: 700;
+  margin-left: 50px;
+}
+
+@media (max-width: 450px){
+  .navbar-brand{
+  font-size: 20px;
+  margin-left: 5px;
+}
+}
+.collapse ul{
+   margin-left: auto !important;
+   margin-right: 50px;
+}
+
+.collapse ul li a{
+  color: #001f33;
+  margin:0px 8px;
+  font-weight: 500;
+  transition: 1s ease;
+   border-bottom: 2px solid #fff;
+}
+
+.collapse ul li a:hover{
+  color: #3399ff !important;
+  border-bottom: 2px solid #3399ff;
+}
+.collapse .button{
+  background-color: black;
+  border-radius: 30px;
+  color: #fff !important;
+  padding:9px 20px !important;
+} 
+
+.topbar{
+  display: flex;
+  padding: 10px 0;
+  
+}
+
+.topbar .sym{
+  width:50%;
+  height: auto;
+  margin-right: 90px;
+  text-align: right;
+  color: #006699;
+  cursor: pointer;
+   
+}
+.topbar .num{
+  width:50%;
+  height: auto;
+  text-align: left;
+  margin-left: 50px;
+  color: #006699;
+  cursor: pointer;
+
+}
+
+.topbar .sym .fa, .topbar .num .fa{
+  margin:0 8px;
+  font-size: 20px;
+}
+.topbar .sym .fa:hover, .topbar .num .fa:hover{
+    color: #3399ff;
+}
+.topbar .num span{
+  color: black;
+  }
+
+ .h1{
+     background-color: red;
+     font-family: poppins !important;
+     text-transform: uppercase;
+    font-size: 30px;
+ }
+
+
+
+.footer-dark {
+  padding:40px 0;
+  color:#f0f9ff;
+  background-color:#282d32;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+  text-align: left;
+}
+.footer-dark p{
+  opacity: 0.6;
+}
+
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+.row{
+  height: 114px;
+}
+
+
+.collapsible {
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  margin:auto !important;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  border:none;
+  outline: none;
+}
+
+.coll{
+  width: 80%;
+  margin:auto;
+}
+.active, .collapsible:hover {
+  background-color: #f2f2f2;
+  color: #0080ff !important;
+  border:none;
+  outline: none;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color: 0080ff !important;
+}
+
+
+
+.img_wrap{
+  width: 100%;
+  /*max-width: 100%;*/
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.img_wrap img{
+  width:40%;
+}
+
+/*.img_wrap:hover img{
+  cursor: pointer;
+  height:120px;
+  width:120px;
+
+}
+
+.img_wrap_text{
+  padding: 30px 15px;
+  max-height: 150px ;
+  position: absolute;
+  bottom: 0px;
+  color: #fff;
+}
+
+.img_wrap_text p{
+    line-height: 26px;
+}*/
+
+.search{
+  background-color: rgb(0, 153, 230, 0.2);
+  padding:90px 0;
+
+}
+
+.searchbar{
+  background-color: #fff;
+  width:700px;
+  margin: auto;
+  padding:15px;
+
+}
+
+.searchbar input{
+  width:93%;
+  border:none;
+  outline: none;
+}
+
+.searchbar input::placeholder{
+}
+
+.searchbar svg{
+  font-size: 40px;
+}
+
+.covid{
+  color: #fff;
+  line-height: 35px;
+  background-color: #28a745;
+  padding: 30px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.button {
+  background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 15px;
+}
+
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.form{
+  background-color: rgba(0, 0, 0, 0.5);
+  width:100%;
+  height:auto;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 99 !important;
+  display: none;
+  
+
+}
+
+.form h1{
+  font-size: 30px;
+}
+
+.form hr{
+  width:100%;
+  border-bottom:1px solid #f2f2f2;
+  margin-bottom: 50px;
+}
+
+.form .form-box{
+  background:linear-gradient(rgb(255, 255, 255, 0.9), rgb(255, 255, 255, 0.9)), url("download.jpg");
+  background-size: 90% 90%;
+  background-position: center;
+  height:auto;
+  width:40%;
+  margin: auto;
+  margin: 60px auto;
+  padding:40px;
+  padding-top: 0px;
+  transition: 0.5s ease;
+
+  
+
+}
+
+
+.form input, .form textarea, .form select{
+  border:1px solid #d9d9d9;
+  width:100%;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  outline-color: #66ccff;
+}
+
+.form label{
+  margin: 0px;
+  font-weight: bold;
+}
+
+
+@media (max-width: 900px){
+   .form .form-box{
+    width: 70%;
+   }
+}
+
+@media (max-width: 400px){
+   .form .form-box{
+    width: 90%;
+   }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="num">
+    <i class="fa fa-cloud"></i><span>bhavehospital@gmail.com</span>
+    &nbsp;&nbsp;&nbsp;
+        <i class="fa fa-mobile"></i><span>+91 9045327865</span>
+  </div>
+  <div class="sym">
+    
+<i class="fa fa-twitter"></i>
+<i class="fa fa-facebook"></i>
+<i class="fa fa-instagram"></i>
+<i class="fa fa-linkedin"></i>
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top">
+  <a class="navbar-brand" href="#">Bhave Multispeciality Hospital</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+    <ul class="nav navbar-nav navbar-right">
+      
+       <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services and Specialities</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Doctors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link button" href="#">Make an Appoinment</a>
+      </li>   
+    </ul>
+  </div>  
+</nav>
+<br>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../images/h2.jpg" alt="Los Angeles" width="100%" height="600px">
+    </div>
+    <div class="carousel-item">
+      <img src="../images/h1.jpg" alt="Chicago" width="100%" height="600px">
+    </div>
+    <div class="carousel-item">
+      <img src="../images/h3.jpg" alt="New York" width="100%" height="600px">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+<br>
+<br>
+<br>
+
+<h1 style=" font-family: poppins !important;
+           text-transform: uppercase;
+            font-size: 40px;
+            text-align: center;
+            ">Unsure about your Service?</h1>
+<br>
+<h6 style="color: #3399ff;
+          text-align: center;">Quick search</h6>
+
+
+<br>
+
+<div class="search">
+  <div class="searchbar">
+    <input type="text" name="" placeholder="search something...">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2.5 -2.5 24 24" width="30" height="30" preserveAspectRatio="xMinYMin" class="icon__icon"><path fill="grey" d="M8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12zm6.32-1.094l3.58 3.58a1 1 0 1 1-1.415 1.413l-3.58-3.58a8 8 0 1 1 1.414-1.414z"></path></svg>
+  </div>
+</div>
+ <br>
+ <br>
+ <h5 style="border: 2px solid #3399ff; padding: 12px; color: #3399ff; 
+  width: 20%; text-align: center;
+ font-family: Georgia, serif;">More about Us</h5>
+<br>
+<div class="coll">
+<button class="collapsible">Super Specialities</button>
+<div class="content 1">
+    <div class="container">
+
+        <div class="row" style="height:auto;">
+          <div class="col-md-4">
+            <div class="img_wrap">
+              <img src="../images/1.png">
+              <h5>Baritaric and Metabolic Surgery</h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+              <div class="img_wrap">
+                  <img src="../images/2.png">
+                      <h5>Cancer Services</h5>
+              </div>
+          </div>
+          <div class="col-md-4">
+             <div class="img_wrap">
+                  <img src="../images/3.png">
+                        <h5>Cardiac Sciences & CCU</h5>
+              </div>
+            </div>
+        </div>
+        <div class="row" style="height:auto;">
+          <div class="col-md-4">
+            <div class="img_wrap">
+              <img src="../images/4.png">
+              <h5>Cosmetic & Plastic Surgery</h5>
+            </div>
+          </div>
+                    <div class="col-md-4">
+                         <div class="img_wrap">
+                            <img src="../images/5.png">
+                            <h5>Critical Care</h5>
+                         </div>
+                    </div>
+                    <div class="col-md-4">
+                         <div class="img_wrap">
+                            <img src="../images/6.png">
+                            <h5>Diabetology & Endocrinology</h5>
+                         </div>
+                    </div>
+        </div>
+        <div class="row" style="height:auto;">
+          <div class="col-md-4">
+            <div class="img_wrap">
+              <img src="../images/7.png">
+              <h5>Gastroenterology</h5>
+            </div>
+          </div>
+                    <div class="col-md-4">
+                         <div class="img_wrap">
+                            <img src="../images/8.png">
+                            <h5>Haematology</h5>
+                         </div>
+                    </div>
+                    <div class="col-md-4">
+                         <div class="img_wrap">
+                            <img src="../images/9.png">
+                            <h5>ICU</h5>
+                         </div>
+                    </div>
+        </div>
+             <div class="row" style="height:auto;">
+          <div class="col-md-4">
+            <div class="img_wrap">
+              <img src="../images/13.png">
+              <h5>Neuro Sciences</h5>
+            </div>
+          </div>
+                    <div class="col-md-4">
+                         <div class="img_wrap">
+                            <img src="../images/14.png">
+                            <h5>Neuro Trauma</h5>
+                         </div>
+                    </div>
+                    <div class="col-md-4">
+                         <div class="img_wrap">
+                            <img src="../images/15.png">
+                            <h5>Fetal Medicine</h5>
+                         </div>
+                    </div>
+        </div>
+             <div class="row" style="height:auto;">
+          <div class="col-md-4">
+            <div class="img_wrap">
+              <img src="../images/16.png">
+              <h5>Orthopedics & Joint Replacement</h5>
+            </div>
+          </div>
+                    <div class="col-md-4">
+                         <div class="img_wrap">
+                            <img src="../images/17.png">
+                            <h5>Paediatrics Endocrinology</h5>
+                         </div>
+                    </div>
+                    <div class="col-md-4">
+                         <div class="img_wrap">
+                            <img src="../images/18.png">
+                            <h5>Spine Surgery</h5>
+                         </div>
+                    </div>
+        </div>
+             <div class="row" style="height:auto;">
+          <div class="col-md-4">
+            <div class="img_wrap">
+              <img src="../images/10.png">
+              <h5>Interventional Radiology</h5>
+            </div>
+          </div>
+                    <div class="col-md-4">
+                         <div class="img_wrap">
+                            <img src="../images/11.png">
+                            <h5>Laparoscopic Surgery</h5>
+                         </div>
+                    </div>
+                    <div class="col-md-4">
+                         <div class="img_wrap">
+                            <img src="../images/12.png">
+                            <h5>Molecular Imaging & Nucelar Medicine</h5>
+                         </div>
+                    </div>
+        </div>
+      </div>
+</div>
+     
+
+<button class="collapsible">Broad Specialities</button>
+<div class="content 2">
+    <div class="container">
+
+        <div class="row" style="height:auto;">
+          <div class="col-md-4">
+            <div class="img_wrap">
+              <img src="../images/19.png">
+              <h5>Accident & Emergency</h5>
+            </div>
+          </div>
+                    <div class="col-md-4">
+                         <div class="img_wrap">
+                            <img src="../images/20.png">
+                            <h5>Anaesthia</h5>
+                         </div>
+                    </div>
+                    <div class="col-md-4">
+                         <div class="img_wrap">
+                            <img src="../images/21.png">
+                            <h5>Dentistry</h5>
+                         </div>
+                    </div>
+        </div>
+             <div class="row" style="height:auto;">
+          <div class="col-md-4">
+            <div class="img_wrap">
+              <img src="../images/22.png">
+              <h5>Dermatology</h5>
+            </div>
+          </div>
+                    <div class="col-md-4">
+                         <div class="img_wrap">
+                            <img src="../images/23.png">
+                            <h5>ENT</h5>
+                         </div>
+                    </div>
+                    <div class="col-md-4">
+                         <div class="img_wrap">
+                            <img src="../images/24.png">
+                            <h5>General Medicine</h5>
+                         </div>
+                    </div>
+        </div>
+             <div class="row" style="height:auto;">
+          <div class="col-md-4">
+            <div class="img_wrap">
+              <img src="../images/25.png">
+              <h5>General Surgery</h5>
+            </div>
+          </div>
+                    <div class="col-md-4">
+                         <div class="img_wrap">
+                            <img src="../images/26.png">
+                            <h5>Opthalmology</h5>
+                         </div>
+                    </div>
+                    <div class="col-md-4">
+                         <div class="img_wrap">
+                            <img src="../images/27.png">
+                            <h5>Pain Management & Palliative Care</h5>
+                         </div>
+                    </div>
+        </div>
+             <div class="row" style="height:auto;">
+          <div class="col-md-4">
+            <div class="img_wrap">
+              <img src="../images/28.png">
+              <h5>Psychiatry</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<button class="collapsible">Auxillary Services</button>
+<div class="content 3">
+    <div class="container">
+
+        <div class="row" style="height:auto;">
+          <div class="col-md-4">
+            <div class="img_wrap">
+              <img src="../images/29.png">
+              <h5>Academics</h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+              <div class="img_wrap">
+                  <img src="../images/30.png">
+                      <h5>Blood Bank & Transfusion Services</h5>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="img_wrap">
+                  <img src="../images/31.png">
+                      <h5>Clinical Services</h5>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height:auto;">
+          <div class="col-md-4">
+            <div class="img_wrap">
+              <img src="../images/35.png">
+              <h5>Physiotherapy</h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+              <div class="img_wrap">
+                  <img src="../images/36.png">
+                      <h5>Speech Therapy</h5>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="img_wrap">
+                  <img src="../images/37.png">
+                      <h5>Clinical Research</h5>
+              </div>
+          </div>
+
+          </div>
+      <div class="row" style="height:auto;">
+          <div class="col-md-4">
+            <div class="img_wrap">
+              <img src="../images/32.png">
+              <h5>Food & Dietary services</h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+              <div class="img_wrap">
+                  <img src="../images/33.png">
+                      <h5>Health Check Center</h5>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="img_wrap">
+                  <img src="../images/34.png">
+                      <h5>Medical Social</h5>
+              </div>
+          </div>
+        </div>
+      </div>
+        </div>
+        </div>
+      </div>
+
+</div>
+</div>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+           console.log(content);
+
+      
+    } 
+  });
+}
+</script>
+<br>
+<br>
+<br>
+<center><button class="button button2" onclick="open_tab();">Make An Appointment</button>
+</center>
+
+<br>
+<br>
+
+<div class="covid">
+  <div class="typewriter"></div><br>
+  <h2>Stay Alert, Stay Safe! <b>FAQ's on COVID-19</b><br></h2>
+  <h6>Bhave's Multispeciality Hospital Wishes you Happy & Healthy Life</h6><br>
+  </div>
+</div>
+
+<div class="form" id="form">
+  <div class="form-box" id="form-box">
+    <div style="text-align: right;">
+      <span style="font-size:40px; cursor: pointer;" onclick="close_tab();">
+      &times;
+    </span>
+    </div>
+    <h1>Patients Personal Details</h1>
+    <p>Fill out the following form properly</p>
+    <hr>
+
+      <label>Name</label>
+      <input type="text" name="">
+
+<div style="display: flex; justify-content: space-between;">
+  <div>
+      <label>Gender</label>
+      <select>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Others</option>
+     </select>
+  </div> 
+  <div>
+      <label>phone Number</label>
+      <input type="text" name="">
+  </div>
+</div>
+      <label>Date of birth</label>
+      <input type="date" name="">
+
+      <label>Address</label>
+      <textarea></textarea>
+
+
+      <label>Email</label>
+      <input type="email" name="">
+
+      <label>Have you previously attended our facility</label>
+      <div style="display: flex; justify-content: space-between; width:30%">
+        <input type="radio" name="gender" style="margin-top: 5px">Yes
+        <input type="radio" name="gender" style="margin-top: 5px">No
+      </div>
+      
+<button onclick="close_tab()">Submit</button>
+
+    
+  </div>
+</div>
+
+<script type="text/javascript">
+  function close_tab(){
+    document.getElementById('form').style.display = "none";
+  }
+
+   function open_tab(){
+    document.getElementById('form').style.display = "block";
+  }
+</script>
+
+
+
+<div class="footer-dark">
+   <footer>
+   <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-3 item">
+         <h3><span><i class="fa fa-copy"></i></span>&nbsp;&nbsp;For Appointments</h3>
+         <p>
+           +91 7645348760
+         </p>
+         
+         <h3><span><i class="fa fa-ambulance"></i></span>&nbsp;&nbsp;For Ambulance</h3>
+         <p>
+           +91 7645340001
+         </p>
+        </div>
+        <div class="col-sm-6 col-md-3 item">
+          <h3>About</h3>
+          <p>Bhave Hospital, in the past Ten years has set new bench marks<br>for standards in the health care industry.</p>
+        </div>
+          <div class="col-md-6 col-md-3 item">
+          <h3>Address</h3>
+          <p>Bhave Multispeciality Hospital, Krishna Chowk, <br>Opposite to Sambhaji Bank, New Sangvi,<br>Pune - 411061.</p>
+          </div>
+        </div>
+          <p class="copyright">Bhave Hospital © 2021</p>
+        </div>
+   </footer>
+  </div>
+
+</body>
+</html>
