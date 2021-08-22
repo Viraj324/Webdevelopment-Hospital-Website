@@ -2,219 +2,218 @@
     margin-top: 10px;
     background-color: #fff !important;
     box-shadow: 0px 0px 10px 1px rgb(0, 153, 255, 0.2);
-    padding:20px;
-  }
-  
-  .navbar-brand{
+    padding: 20px;
+}
+
+.navbar-brand {
     font-family: poppins;
     text-transform: uppercase;
     font-size: 30px;
     color: #001f33 !important;
     font-weight: 700;
     margin-left: 20px;
-  }
-  
-  @media (max-width: 450px){
-    .navbar-brand{
-    font-size: 20px;
-    margin-left: 5px;
-  }
-  }
-  .collapse ul{
-     margin-left: auto !important;
-     margin-right: 10px;
-   }
-  .collapse ul li a{
+}
+
+@media (max-width: 450px) {
+    .navbar-brand {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+}
+
+.collapse ul {
+    margin-left: auto !important;
+    margin-right: 10px;
+}
+
+.collapse ul li a {
     color: #001f33;
-    margin:0px 8px;
+    margin: 0px 8px;
     font-weight: 500;
-  }
-  
-  .collapse ul li a:hover{
+}
+
+.collapse ul li a:hover {
     color: black!important;
     border-bottom: 2px solid #3399ff;
-  }
-  .collapse .button{
+}
+
+.collapse .button {
     background-color: #3399ff;
     border-radius: 30px;
     color: #fff !important;
-    padding:9px 20px !important;
-  } 
-  
-  .topbar{
+    padding: 9px 20px !important;
+}
+
+.topbar {
     display: flex;
     padding: 10px 0;
-    
-  }
-  
-  .topbar .sym{
-    width:50%;
+}
+
+.topbar .sym {
+    width: 50%;
     height: auto;
     margin-right: 90px;
     text-align: right;
     color: #006699;
     cursor: pointer;
-     
-  }
-  .topbar .num{
-    width:50%;
+}
+
+.topbar .num {
+    width: 50%;
     height: auto;
     text-align: left;
     margin-left: 50px;
     color: #006699;
     cursor: pointer;
-  
-  }
-  
-  .topbar .sym .fa, .topbar .num .fa{
-    margin:0 8px;
+}
+
+.topbar .sym .fa,
+.topbar .num .fa {
+    margin: 0 8px;
     font-size: 20px;
-  }
-  .topbar .sym .fa:hover, .topbar .num .fa:hover{
-      color: #3399ff;
-  }
-  .topbar .num span{
+}
+
+.topbar .sym .fa:hover,
+.topbar .num .fa:hover {
+    color: #3399ff;
+}
+
+.topbar .num span {
     color: black;
-    }
-  
-   
-  
-  
-  
-  .footer-dark {
-    padding:40px 0;
-    color:#f0f9ff;
-    background-color:#282d32;
-  }
-  
-  .footer-dark h3 {
-    margin-top:0;
-    margin-bottom:12px;
-    font-weight:bold;
-    font-size:16px;
+}
+
+.footer-dark {
+    padding: 40px 0;
+    color: #f0f9ff;
+    background-color: #282d32;
+}
+
+.footer-dark h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
     text-align: left;
-  }
-  .footer-dark p{
+}
+
+.footer-dark p {
     opacity: 0.6;
-  }
-  
-  .footer-dark .copyright {
-    text-align:center;
-    padding-top:24px;
-    opacity:0.3;
-    font-size:13px;
-    margin-bottom:0;
-  }
-  .row{
+}
+
+.footer-dark .copyright {
+    text-align: center;
+    padding-top: 24px;
+    opacity: 0.3;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.row {
     height: 114px;
-  }
-  .feedbackform
-  {
-  display:flex;
-  margin-left:220px;
-  
-  }
-  .feedbackform .feedbackformimg img
-  {
-  width:400px;
-  height:1025px;
-  border-radius: 30px;
-  }
-  .feedbackform .feedbackformtext h4
-  {
-  background-color:teal;
-  color:white;
-  text-align:center;
-  border-radius:30px;
-  }
-  .feedbackform .feedbackformtext
-  {
-  position:relative;
-  background-color:#f2f2f2;
-  width:400px;
-  padding:9px 10px;
-  text-align:center;
-  border-radius: 30px;
-   margin-bottom:60px;
-  border:0;
-  }
-  .feedbackform .feedbackformtext .option input
-  {
-  border:none;
-  border-bottom:3px solid teal;
-  background:#f2f2f2;
-  outline:none;
-  width:60%;
-  }
-  .feedbackform .feedbackformtext textarea
-  {
-  border:none;
-  border-bottom:3px solid teal;
-  background:#f2f2f2;
-  outline:none;
-  width:60%;
-  }
-  .input1
-  {
-  text-align:left;
-  padding-left: 140px;
-  }
-  .feedbackform .feedbackformtext button
-  {
-  background-color: teal;
-  color:white;
+}
+
+.feedbackform {
+    display: flex;
+    margin-left: 220px;
+}
+
+.feedbackform .feedbackformimg img {
+    width: 400px;
+    height: 1025px;
     border-radius: 30px;
-    color:white;
-  
-  padding:10px 10px;
-  }
-  .reviewmain 
-  {
-  display:flex;
-  margin-left:50px;
-  margin-bottom:100px;
-  margin-top:20px;
-  margin-right:50px;
-  }
-  .reviewmain .reviewbox1
-  {
-  width:400px;
-  height:200px;
-  border :3px solid teal;
-  display:flex;
-  margin-top:20px;
-  text-align:center;
-  margin-left:20px;
-  }
-  .reviewmain .reviewbox1 .reviewfont1
-  {
-  margin-left:70px;
-  margin-top:20px;
-  font-size:25px;
-  }
-  .reviewmain .reviewbox1 .reviewname1
-  {
-  margin-right:80px;
-  margin-top:20px;
-  }
-  .reviewmain .reviewbox1 .reviewname1 img
-  {
-  width:100px;
-  height:30px;
-  }
-  
-  
-  .main h4
-  {
-  width:200px;
-  background-color:teal;
-  color:white;
-  margin-left:520px;
-  border-radius:20px;
-  }
-  .reviewmain .reviewbox1:hover
-  {
+}
+
+.feedbackform .feedbackformtext h4 {
+    background-color: teal;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.feedbackform .feedbackformtext {
+    position: relative;
+    background-color: #f2f2f2;
+    width: 400px;
+    padding: 9px 10px;
+    text-align: center;
+    border-radius: 30px;
+    margin-bottom: 60px;
+    border: 0;
+}
+
+.feedbackform .feedbackformtext .option input {
+    border: none;
+    border-bottom: 3px solid teal;
+    background: #f2f2f2;
+    outline: none;
+    width: 60%;
+}
+
+.feedbackform .feedbackformtext textarea {
+    border: none;
+    border-bottom: 3px solid teal;
+    background: #f2f2f2;
+    outline: none;
+    width: 60%;
+}
+
+.input1 {
+    text-align: left;
+    padding-left: 140px;
+}
+
+.feedbackform .feedbackformtext button {
+    background-color: teal;
+    color: white;
+    border-radius: 30px;
+    color: white;
+    padding: 10px 10px;
+}
+
+.reviewmain {
+    display: flex;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+.reviewmain .reviewbox1 {
+    width: 400px;
+    height: 200px;
+    border: 3px solid teal;
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.reviewmain .reviewbox1 .reviewfont1 {
+    margin-left: 70px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.reviewmain .reviewbox1 .reviewname1 {
+    margin-right: 80px;
+    margin-top: 20px;
+}
+
+.reviewmain .reviewbox1 .reviewname1 img {
+    width: 100px;
+    height: 30px;
+}
+
+.main h4 {
+    width: 200px;
+    background-color: teal;
+    color: white;
+    margin-left: 520px;
+    border-radius: 20px;
+}
+
+.reviewmain .reviewbox1:hover {
     transform: scale(1.1);
-  background-color: rgb(0, 153, 255, 0.2);
-  transition: 0.5s ease;
-  }
+    background-color: rgb(0, 153, 255, 0.2);
+    transition: 0.5s ease;
+}

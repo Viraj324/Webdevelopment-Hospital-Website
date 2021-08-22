@@ -125,7 +125,7 @@
     width: 0ch;
     overflow: hidden;
     white-space: nowrap;
-    animation: text 6s infinite;
+    animation: text 4s infinite;
     animation-delay: 1s;
 }
 
@@ -134,14 +134,47 @@
         width: 0ch;
     }
     100% {
-        width: 27ch;
+        width: 11ch;
     }
 }
 
+.info-box {
+    width: 330px !important;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.info-box div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 22px;
+    background: black;
+    color: white;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.info-box:hover div {
+    width: 315px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7;
+}
+
+.Doctors {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
 .img-fluid {
-    width: 450px;
-    height: 280px;
-    border-radius: 15px;
+    border-radius: 10px;
+    height: 380px;
+    width: 330px;
     box-shadow: 0px 0px 10px 1px rgb(150, 150, 150);
 }
 
@@ -149,17 +182,6 @@
     font-family: poppins;
     color: black;
     font-size: 20px;
-    text-align: center;
     opacity: 0.9;
-}
-
-.col-sm-4:hover {
-    transform: scale(1.05);
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-
-.service {
-    padding-left: 70px;
-    padding-right: 70px;
+    margin-left: 80px;
 }
