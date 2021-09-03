@@ -173,6 +173,29 @@
   padding-left: 70px;
   padding-right: 70px;
 }
+#break {
+    display: none;
+}
+
+@media (max-width: 650px) {
+    
+    .navbar-brand {
+        font-size: 25px;
+        margin-bottom: 1%;
+    }
+    .navbar-brand p {
+        font-size: 18px;
+    }
+    #break {
+        display: inline;
+    }
+    .topbar {
+        display: none;
+    }
+    #i1{
+      font-size: 28px;
+    }
+}
 
 </style>
 </head>
@@ -194,7 +217,7 @@
   </div>
 </div>
 <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top">
-  <a class="navbar-brand" href="#">Bhave&nbsp; Multispeciality &nbsp;Hospital</a>
+  <a class="navbar-brand" href="#">Bhave&nbsp; Multispeciality &nbsp;<br id="break">Hospital</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
