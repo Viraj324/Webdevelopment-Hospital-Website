@@ -132,9 +132,31 @@
     padding-top: 30px;
 }
 
-@media (max-width: 560px) {
+#break {
+    display: none;
+}
+
+@media (max-width: 650px) {
     .info-box-wrapper {
         flex-direction: column;
+    }
+    .navbar-brand {
+        font-size: 25px;
+        margin-top: 30%;
+        margin-bottom: 7%;
+    }
+    .navbar-brand p {
+        font-size: 18px;
+    }
+    .navbar-brand img {
+        height: 300px;
+        width: auto;
+    }
+    #break {
+        display: inline;
+    }
+    .topbar {
+        display: none;
     }
 }
 
