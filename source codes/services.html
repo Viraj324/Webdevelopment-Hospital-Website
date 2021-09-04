@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,8 +10,194 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="../css/services.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5./js/bootstrap.min.js"></script>
+   <style type="text/css">
+ .navbar {
+  margin-top: 10px;
+  background-color: #fff !important;
+  box-shadow: 0px 0px 10px 1px rgb(0, 153, 255, 0.2);
+  padding:30px;
+}
+
+.navbar-brand{
+  font-family: poppins;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #001f33 !important;
+  font-weight: 700;
+  margin-left: 50px;
+}
+
+@media (max-width: 450px){
+  .navbar-brand{
+  font-size: 20px;
+  margin-left: 5px;
+}
+}
+.collapse ul{
+   margin-left: auto !important;
+   margin-right: 50px;
+}
+
+.collapse ul li a{
+  color: #001f33;
+  margin:0px 8px;
+  font-weight: 500;
+}
+
+.collapse ul li a:hover{
+  color: #3399ff !important;
+  border-bottom: 2px solid #3399ff;
+}
+.collapse .button{
+  background-color: black;
+  border-radius: 30px;
+  color: #fff !important;
+  padding:9px 20px !important;
+} 
+
+.topbar{
+  display: flex;
+  padding: 10px 0;
+  
+}
+
+.topbar .sym{
+  width:50%;
+  height: auto;
+  margin-right: 90px;
+  text-align: right;
+  color: #006699;
+  cursor: pointer;
+   
+}
+.topbar .num{
+  width:50%;
+  height: auto;
+  text-align: left;
+  margin-left: 50px;
+  color: #006699;
+  cursor: pointer;
+
+}
+
+.topbar .sym .fa, .topbar .num .fa{
+  margin:0 8px;
+  font-size: 20px;
+}
+.topbar .sym .fa:hover, .topbar .num .fa:hover{
+    color: #3399ff;
+}
+.topbar .num span{
+  color: black;
+  }
+
+ 
+
+
+
+.footer-dark {
+  padding:40px 0;
+  color:#f0f9ff;
+  background-color:#282d32;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+  text-align: left;
+}
+.footer-dark p{
+  opacity: 0.6;
+}
+
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+#i2{
+  height: 114px;
+}
+
+
+.first{
+  background-color: rgb(0, 153, 255, 0.2);
+  height: 100px;
+  line-height: 75px;
+  vertical-align: middle;
+  font-family: Century Gothic;
+  padding-left: 15px;
+}
+
+#i1{
+  width: 0ch;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: text 6s  infinite ;
+  animation-delay: 1s;
+}
+@keyframes text{
+  0% {
+    width: 0ch;
+  }
+  100%{
+    width: 27ch;
+  }
+}
+.img-fluid{
+  width: 450px;
+  height: 280px;
+  border-radius: 15px;
+   box-shadow: 0px 0px 10px 1px rgb(150,150,150);
+}
+
+#i3{
+  font-family: poppins;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.col-sm-4:hover{
+  transform: scale(1.05);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.service{
+  padding-left: 70px;
+  padding-right: 70px;
+}
+#break {
+    display: none;
+}
+
+@media (max-width: 650px) {
+    
+    .navbar-brand {
+        font-size: 25px;
+        margin-bottom: 1%;
+    }
+    .navbar-brand p {
+        font-size: 18px;
+    }
+    #break {
+        display: inline;
+    }
+    .topbar {
+        display: none;
+    }
+    #i1{
+      font-size: 28px;
+    }
+}
+
+</style>
 </head>
 
 <body>
@@ -64,8 +250,41 @@
       </p>
     </div>
   </div>
-  <br>
-  <div class="container-fluid">
+</div>
+<nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top">
+  <a class="navbar-brand" href="#">Bhave&nbsp; Multispeciality &nbsp;<br id="break">Hospital</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+    <ul class="nav navbar-nav navbar-right">
+      
+       <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services and Specialities</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="doctors.html">Doctors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link button" href="#">Make an Appoinment</a>
+      </li>   
+    </ul>
+  </div>  
+</nav>
+<br>
+
+<div class="container-fluid ">
+  <div class="first"><p><center><h2 id="i1"><br>Our Services and Specialities<br></h2></center></p></div>
+</div>
+<br>
+<div class="container-fluid">
     <div id="carouselExample1" class="carousel slide z-depth-1-half" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
