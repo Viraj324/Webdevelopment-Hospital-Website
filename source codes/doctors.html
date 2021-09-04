@@ -9,411 +9,69 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <style type="text/css">
-.navbar {
-  margin-top: 10px;
-  background-color: #fff !important;
-  box-shadow: 0px 0px 10px 1px rgb(0, 153, 255, 0.2);
-  padding:30px;
-}
-
-.navbar-brand{
-  font-family: poppins;
-  text-transform: uppercase;
-  font-size: 30px;
-  color: #001f33 !important;
-  font-weight: 700;
-  margin-left: 50px;
-}
-
-@media (max-width: 450px){
-  .navbar-brand{
-  font-size: 20px;
-  margin-left: 5px;
-}
-}
-.collapse ul{
-   margin-left: auto !important;
-   margin-right: 50px;
-}
-
-.collapse ul li a{
-  color: #001f33;
-  margin:0px 8px;
-  font-weight: 500;
-}
-
-.collapse ul li a:hover{
-  color: #3399ff !important;
-  border-bottom: 2px solid #3399ff;
-}
-.collapse .button{
-  background-color: black;
-  border-radius: 30px;
-  color: #fff !important;
-  padding:9px 20px !important;
-} 
-
-.topbar{
-  display: flex;
-  padding: 10px 0;
-  
-}
-
-.topbar .sym{
-  width:50%;
-  height: auto;
-  margin-right: 90px;
-  text-align: right;
-  color: #006699;
-  cursor: pointer;
-   
-}
-.topbar .num{
-  width:50%;
-  height: auto;
-  text-align: left;
-  margin-left: 50px;
-  color: #006699;
-  cursor: pointer;
-
-}
-
-.topbar .sym .fa, .topbar .num .fa{
-  margin:0 8px;
-  font-size: 20px;
-}
-.topbar .sym .fa:hover, .topbar .num .fa:hover{
-    color: #3399ff;
-}
-.topbar .num span{
-  color: black;
-  }
-
- 
-.footer-dark {
-  padding:40px 0;
-  color:#f0f9ff;
-  background-color:#282d32;
-}
-
-.footer-dark h3 {
-  margin-top:0;
-  margin-bottom:12px;
-  font-weight:bold;
-  font-size:16px;
-  text-align: left;
-}
-.footer-dark p{
-  opacity: 0.6;
-}
-
-.footer-dark .copyright {
-  text-align:center;
-  padding-top:24px;
-  opacity:0.3;
-  font-size:13px;
-  margin-bottom:0;
-}
-#i2{
-  height: 114px;
-}
-
-.first{
-  background-color: rgb(0, 153, 255, 0.2);
-  height: 100px;
-  line-height: 75px;
-  vertical-align: middle;
-  font-family: Century Gothic;
-  padding-left: 15px;
-}
-
-#i1{
-  width: 0ch;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: text 4s  infinite ;
-  animation-delay: 1s;
-}
-@keyframes text{
-  0% {
-    width: 0ch;
-  }
-  100%{
-    width: 11ch;
-  }
-}
-
-
-.info-box{
-    width: 330px !important;
-    margin-top: 50px;
-    border-radius: 10px;
-}
-
-.info-box div{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 22px;
-  background: black;
-  color: white;
-  margin-bottom: 5px;
-  font-family: sans-serif;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: visibility 0s, opacity 0.5s linear; 
-  transition: visibility 0s, opacity 0.5s linear;
-}
-.info-box:hover div{
-  width: 315px;
-    padding: 8px 15px;
-    visibility: visible;
-    opacity: 0.7; 
-}
-.Doctors{
-  padding-left: 80px;
-  padding-right: 80px;
- } 
- .img-fluid{
-  border-radius: 10px;
-   height: 380px;
-    width: 330px;
-     box-shadow: 0px 0px 10px 1px rgb(150,150,150); 
- }
-#i3{
-  font-family: poppins;
-  color: black;
-  font-size: 20px;
-  opacity: 0.9;
-  margin-left: 80px;
-}
-
-#i4{
-  color: white;
-  text-decoration: none;
-}
-#i4:hover{
-  color: yellow;
-  text-decoration: none;
-}
-#break {
-    display: none;
-}
-
-@media (max-width: 650px) {
-    
-    .navbar-brand {
-        font-size: 25px;
-        margin-bottom: 1%;
-    }
-    .navbar-brand p {
-        font-size: 18px;
-    }
-    #break {
-        display: inline;
-    }
-    .topbar {
-        display: none;
-    }
-    .Doctors{
-      padding-left: 30px;
-    }
-}
-
- </style>
+  <link rel="stylesheet" href="../css/doctors.css">
 </head>
-<body>
-	<div class="topbar">
-  <div class="num">
-    <i class="fa fa-cloud"></i><span>bhavehospital@gmail.com</span>
-    &nbsp;&nbsp;&nbsp;
-        <i class="fa fa-mobile"></i><span>+91 9045327865</span>
-  </div>
-  <div class="sym">
-    
-<i class="fa fa-twitter"></i>
-<i class="fa fa-facebook"></i>
-<i class="fa fa-instagram"></i>
-<i class="fa fa-linkedin"></i>
-  </div>
-</div>
-<nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top">
-  <a class="navbar-brand" href="#">Bhave&nbsp; Multispeciality&nbsp;<br id="break">Hospital</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
 
-    <ul class="nav navbar-nav navbar-right">
-      
-       <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="services.html">Services and Specialities</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Doctors</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link button" href="#">Make an Appoinment</a>
-      </li>   
-    </ul>
-  </div>  
-</nav>
-<br>
-<div class="container-fluid ">
-  <div class="first"><p><center><h2 id="i1"><br>Our Doctors<br></h2></center></p></div>
-</div>
-<div class="container-fluid">
-<div class="Doctors">
-    <div class="row">
-	  <div class="col-sm-4">
-		 <div class="info-box">
-	     <img src="../images/doc1.jpg" height="380px" width= "330px" class="img-fluid">
-		    <div>
-          <h3><a href="https://www.medanta.org/doctors/dr-ashok-rajgopal" id="i4">Dr. Ashok Rajgopal</a></h3><br>
-          <ul>
-          <li>SPECIALIZATION AND EXPERTISE -<br>
-        Knee Surgery, Joint Replacement Surgery, Arthroscopic Surgeries, Arthroplastic Surgeries</li><br>
-				<li>QUALIFICATIONS -<br>
-        F.R.C.S., F.I.M.S.A., M.Ch. (Ortho), M.S. (Ortho), M.B.B.S.</li></ul>
-			</div>
-		 </div>
-    </div>
-    <div class="col-sm-4">
-		 <div class="info-box">
-	     <img src="../images/doc2.png" height="380px" width= "330px"  class="img-fluid">
-		    <div>
-				<h3><a href="https://advancedeyehospital.com/doctors/dr-vandana-jain" id="i4">Dr. Vandana Jain</a></h3><br>
-          <ul>
-          <li>SPECIALIZATION AND EXPERTISE -<br>
-        Cornea and Lasik Surgeons,  basic and advanced Corneal conditions like Corneal Scars, Corneal infections, Dry Eye, Pterygium, Keratoconus etc. </li><br>
-        <li>QUALIFICATIONS -<br>
-          MBBS, MS (Gold Medalist), DNB, MNAMS, FLVPEI, FICO, MBA </li></ul>
-			</div>
-		 </div>
-    </div>
-    <div class="col-sm-4">
-		 <div class="info-box">
-	     <img src="../images/doc3.jpg" height="380px" width= "330px"  class="img-fluid">
-		    <div>
-				<h3><a href="https://en.wikipedia.org/wiki/Naresh_Trehan" id="i4">Dr. Naresh Trehan</a></h3><br>
-          <ul>
-          <li>SPECIALIZATION AND EXPERTISE -<br>
-         Cardiovascular and cardiothoracic surgeon. </li><br>
-        <li>QUALIFICATIONS -<br>
-          MBBS, MS, MD</li></ul>
-			</div>
-		 </div>
-    </div>
+<body>
+  <div class="topbar">
+    <div class="num">
+      <i class="fa fa-cloud"></i><span>bhavehospital@gmail.com</span>
+      &nbsp;&nbsp;&nbsp;
+      <i class="fa fa-mobile"></i><span>+91 9045327865</span>
     </div>
     <div class="sym">
-    <div class="row">
-	<div class="col-sm-4">
-		 <div class="info-box">
-	     <img src="../images/doc4.jpg" height="380px" width= "330px" class="img-fluid">
-		    <div>
-				<h3><a href="https://www.motherhoodindia.com/doctor/dr-mirudhubashini-govindarajan/" id="i4"> Dr. Mirubashini Govindrajan</a></h3><br>
-          <ul>
-          <li>SPECIALIZATION AND EXPERTISE -<br>
-         Consultant Infertility Specialist<br> and Gynaecologist </li><br>
-        <li>QUALIFICATIONS -<br>
-         FRCS (Canada)</li></ul>
-			</div>
-		 </div>
-    </div>
-    <div class="col-sm-4">
-		 <div class="info-box">
-	     <img src="../images/doc5.jpg" height="380px" width= "330px"  class="img-fluid">
-		    <div>
-				<h3><a href="https://www.fortishealthcare.com/doctor/dr-subrat-kumar-acharya-3135" id="i4"> Dr. Subrat Kumar Acharya</a></h3><br>
-          <ul>
-          <li>SPECIALIZATION AND EXPERTISE -<br>
-         Gastroenterology and Hepatobiliary Sciences </li><br>
-        <li>QUALIFICATIONS -<br>
-         MBBS, MD,DM</li></ul>
-			</div>
-		 </div>
-    </div>
-    <div class="col-sm-4">
-		 <div class="info-box">
-	     <img src="../images/doc6.jpg" height="380px" width= "330px"  class="img-fluid">
-		    <div>
-				<h3> <a href="https://en.wikipedia.org/wiki/Neelam_Kler" id="i4">Dr. Neelam Kler</a></h3><br>
-          <ul>
-          <li>SPECIALIZATION AND EXPERTISE -<br>
-        neonatologist, known for her pioneering work on neonatal intensive care and ventilation. </li><br>
-        <li>QUALIFICATIONS -<br>
-         FRCS, MD</li></ul>
-			</div>
-		 </div>
-    </div>
-    </div> 
 
-    <div class="row">
-    <div class="col-sm-4">
-     <div class="info-box">
-       <img src="../images/doc8.jpg" height="380px" width= "330px" class="img-fluid">
-        <div>
-        <h3><a href="https://www.narayanahealth.org/leadership/board-of-directors/dr-devi-shetty" id="i4"> Dr. Devi Shetty</a></h3><br>
-          <ul>
-          <li>SPECIALIZATION AND EXPERTISE -<br>
-         Cardiac surgeon  </li><br>
-        <li>QUALIFICATIONS -<br>
-          MS, FRCS</li></ul>
-      </div>
-     </div>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
     </div>
-    <div class="col-sm-4">
-     <div class="info-box">
-       <img src="../images/doc7.jpg" height="380px" width= "330px"  class="img-fluid">
-        <div>
-        <h3><a href="https://www.motherhoodindia.com/doctor/dr-nandini-mundkur/" id="i4"> Dr. Nandini Mundkur</a></h3><br>
-          <ul>
-          <li>SPECIALIZATION AND EXPERTISE -<br>
-        Pediatrician</li><br>
-        <li>QUALIFICATIONS -<br>
-          MBBS, MD - Pediatrics</li></ul>
-      </div>
-     </div>
-    </div>
-    <div class="col-sm-4">
-     <div class="info-box">
-       <img src="../images/doc9.jpg" height="380px" width= "330px"  class="img-fluid">
-        <div>
-        <h3><a href="https://www.indiacardiacsurgerysite.com/consult-dr-agk-gokhale-best-cardiothoracic-surgeon-apollo-hospital-hyderabad-india.php" id="i4"> Dr. A G K Gokhale</a></h3><br>
-          <ul>
-          <li>SPECIALIZATION AND EXPERTISE -<br>
-         Cardiothoracic & Vascular Surgery</li><br>
-        <li>QUALIFICATIONS -<br>
-         MS, MCH(CMC Vellore), DNB, SMP(IMC), Dsc(Hons)</li></ul>
-      </div>
-     </div>
-    </div>
-    </div> 
+  </div>
 
-</div>
-</div>
-<br><br>
-<div class="footer-dark">
-   <footer>
-   <div class="container">
-      <div class="row" id="i2">
-        <div class="col-sm-6 col-md-3 item">
-         <h3><span><i class="fa fa-copy"></i></span>&nbsp;&nbsp;For Appointments</h3>
-         <p>
-           +91 7645348760
-         </p>
-         
-         <h3><span><i class="fa fa-ambulance"></i></span>&nbsp;&nbsp;For Ambulance</h3>
-         <p>
-           +91 7645340001
-         </p>
+  <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top">
+    <a class="navbar-brand" href="#">Bhave's Multispeciality Hospital</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">
+          <a class="nav-link" href="../source codes/Home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../source codes/services.html">Services and Specialities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../source codes/doctors.html">Doctors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../source codes/contactus.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link button" href="../source codes/Appointments.html">Make an Appoinment</a>
+        </li>
+      </ul>
+    </div>
+  </nav><br>
+  <div class="container-fluid ">
+    <div class="first">
+      <p>
+        <center>
+          <h2 id="i1"><br>Our Doctors<br></h2>
+        </center>
+      </p>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="Doctors">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="info-box">
+            <img src="../images/doctors/avatar1.png" height="380px" width="330px" class="img-fluid">
+            <div>
+              Doctors name, info , qualifications,speciality ,timings etc.
+            </div>
+          </div>
         </div>
         <div class="col-sm-4">
           <div class="info-box">
