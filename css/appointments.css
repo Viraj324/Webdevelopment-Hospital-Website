@@ -3,8 +3,7 @@
     background-color: #fff !important;
     box-shadow: 0 0 10px 1px rgb(0, 153, 255, 0.2);
     padding: 20px;
-    z-index: 0;
-    /*position: fixed;*/
+    z-index: 1;
 }
 
 .navbar-brand {
@@ -294,7 +293,7 @@ footer a:hover {
 }
 
 .carousel-inner {
-    z-index: -1;
+    z-index: 0;
 }
 
 .carousel-inner img {
@@ -430,7 +429,7 @@ footer a:hover {
     position: fixed;
     top: 0px;
     left: 0px;
-    z-index: 1 !important;
+    z-index: 2 !important;
     display: none;
 }
 
